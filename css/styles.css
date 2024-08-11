@@ -132,8 +132,12 @@ p {
 }
 
 image {
-  height: 180px;
-  width: 180px;
+  /* height: 180px;
+  width: 180px; */
+  max-width: 100px;
+  max-height: 100px;
+  width: min-content;
+  height: min-content;
 }
 
 .pageLinks {
