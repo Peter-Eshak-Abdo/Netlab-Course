@@ -166,88 +166,9 @@ p {
   right: 0;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="date"] {
-  box-sizing: border-box;
-  border: 2px solid rgb(255, 0, 0);
-  border-radius: 4px;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus {
-  background-color: rgb(173, 216, 230);
-}
-
 select {
   border-radius: 4px;
   background-color: rgb(242, 242, 242);
-}
-
-#animation1 {
-  width: 120px;
-  height: 120px;
-  background-color: rgb(255, 0, 0);
-  position: relative;
-  animation-name: animate;
-  animation-duration: 5s;
-  animation-delay: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-  border-radius: 10px 100px / 120px;
-  box-shadow: 0 24px 28px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.5);
-  border: 5px solid rgb(120, 120, 120);
-}
-
-#textAnimate {
-  padding: 0px 7px;
-  text-indent: 0px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 1em rgb(0, 0, 255), 0 0 0.2em rgb(0, 0, 255);
-}
-
-#animation1:hover {
-  animation-play-state: paused;
-}
-
-@keyframes animate {
-  0% {
-    background-color: rgb(255, 0, 0);
-    right: 0px;
-    left: 0px;
-  }
-
-  25% {
-    background-color: rgb(255, 255, 0);
-    right: 100px;
-    left: 0px;
-  }
-
-  50% {
-    background-color: rgb(0, 0, 255);
-    right: 100px;
-    left: 100px;
-  }
-
-  75% {
-    background-color: rgb(0, 128, 0);
-    right: 0px;
-    left: 100px;
-  }
-
-  100% {
-    background-color: rgb(255, 0, 0);
-    right: 0px;
-    left: 0px;
-  }
 }
 
 @media only screen and (max-width: 900px) {
