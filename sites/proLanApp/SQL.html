@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ar" translate="yes" data-bs-theme="auto" dir="rtl">
+  <head>
+    <script src="../../bootstrap/js/color-modes.js"></script>
+    <title>About SQL</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Peter Eshak Abdo" />
+    <meta name="keywords" content="SQL" />
+    <meta name="description" content="SQL" />
+    <link rel="icon" type="image/x-icon" href="../../images/apple.png" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/all.min.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../bootstrap/bootstrap_icons/font/bootstrap-icons.min.css" />
+    <script src="../../js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-expand-lg sticky-top rounded-5 pe-3 bg-primary-subtle">
+      <a class="navbar-brand" href="#"> <i class="fa-solid fa-apple-alt fa-xl" style="color: red"></i></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#main"
+        aria-controls="main"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../../index.html">الصفحة الرئسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../appleApp/index.html">Apple</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../e-bookApp/index.html">E-Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="index.html">Programming language</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../storeApp/index.html">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="HTML.html">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="CSS.html">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 active fw-bold text-primary" aria-current="page" href="#">SQL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="PHP.html">PHP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="Python.html">Python</a>
+          </li>
+        </ul>
+        <a class="btn link-info rounded-pill main-btn" href="Register.html">تسجيل دخول</a>
+        <div class="form-check form-switch mx-2">
+          <label for="checkTheme text-body">Dark Mode</label>
+          <input
+            type="checkbox"
+            class="form-check-input p-2"
+            title="Theme Mode"
+            role="switch"
+            id="checkTheme"
+            id="flexSwitchCheckChecked"
+            checked
+            onclick="myFunction()"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="landing d-flex justify-content-center align-items-center px-5 py-4 mb-3 rounded-pill bg-primary-subtle">
+      <div class="text-center">
+        <img src="../../images/sql.jpeg" alt="SQL Icon" class="rounded-5" style="max-width: 200px" />
+        <p class="fs-1 fw-bolder text-primary">ما هي لغة SQL</p>
+        <p class="fs-4 text-body">
+          صُمّمت لغة SQL أو لغة الاستعلامات البنائية لأغراض استرجاع المعلومات من قواعد البيانات، ففي سبعينيات القرن الماضي؛ بدأ علماء الكمبيوتر بتطوير
+          طرق معيارية لمعالجة قواعد البيانات، حيث تمكّنوا من خلال بحوثهم من تطوير لغة ال SQL والتي حازت على شهرتها عندما تمّ اعتمادها من قبل معهد
+          المعايير القومي الأمريكي في عام 1986، ولقد أدّى العمل والتطوير المستمر على قواعد البيانات المترابطة إلى إدخال تحسينات على هذه اللغة، الأمر
+          الذي جعلها واحدة من أكثر لغات قواعد البيانات شهرةً، فضلًا عن تطوير نسخ خاصة منها من قبل بعض الشركات الكبرى كشركة مايكروسوفت وشركة أوراكل
+          بالإضافة إلى النسخة المفتوحة المصدر والمسمّاه ب MySQL والتي حازت على شهرة واسعة جدًا.
+        </p>
+        <a class="btn btn-primary rounded-pill main-btn text-body" href="#start">Get start</a>
+      </div>
+    </div>
+    <div class="navigation row justify-content-lg-center mb-4 rounded-5 mx-auto bg-primary-subtle">
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/sql.jpeg"><img src="../../images/sql.jpeg" alt="SQL Icon" class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Logo</p>
+        </div>
+      </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/sql1.png"><img src="../../images/sql1.png" alt="SQL Code" class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Code</p>
+        </div>
+      </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/sql2.png"><img src="../../images/sql2.png" alt="SQL Code" class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Code</p>
+        </div>
+      </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/sql3.jpeg"><img src="../../images/sql3.jpeg" alt="SQL Code" class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Code</p>
+        </div>
+      </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-md-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/sql4.jpeg"><img src="../../images/sql4.jpeg" alt="SQL Code" class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">SQL Code</p>
+        </div>
+      </div>
+    </div>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-4 text-body" id="start">
+        تقوم لغة SQL على مبدأ توفير وتزويد المبرمجين ومستخدمي الكمبيوتر بطريقة تساعدهم في الحصول على المعلومات المطلوبة من قاعدة البيانات، حيث تتكون
+        هذه اللغة في مستواها البسيط من مجموعة قليلة من الأوامر منها:
+      </p>
+      <ul>
+        <li class="fs-5 text-body">حدّد: ويستخدم لاختيار البيانات.</li>
+        <li class="fs-5 text-body">أدرج: ويستخدم لإضافة البيانات إلى القاعدة.</li>
+        <li class="fs-5 text-body">حدّث: ويستخدم لتعديل المعلومات.</li>
+        <li class="fs-5 text-body">احذف: ويستخدم لحذف المعلومات.</li>
+      </ul>
+      <p class="fs-4 text-body">
+        تستخدم لغة ال SQL بشكل كبير في قواعد البيانات الحكومية ومواقع التجارة الالكترونية على الإنترنت، كما تستخدم على نطاق واسع في أعمال التجارة وذلك
+        لأغراض إدارة قواعد البيانات المتعلّقة بها، ومع الوقت؛ استبدلت ال SQL بما يُسمّى NoSQL، وهي تقوم على مبدأ أنّ البيانات غير المرتّبة في جداول
+        ضمن قواعد البيانات المترابطة قد لا تحتاج إلى استخدام لغة ال SQL لاسترجاعها، وتبعًا لهذا فإنّه غالبًا ما تستخدم لغة SQL في قواعد البيانات
+        التقليدية الصغيرة، بينما تستخدم طرق أخرى للتعامل مع البيانات في أنظمة قواعد البيانات الكبيرة التي لا يكون التحقق فيها من البيانات بشكل صارم.
+      </p>
+    </div>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 text-body text-primary-emphasis">مميزات لغة ال SQL وسلبياتها</p>
+      <p class="fs-4 text-body">
+        ليس هناك لغة برمجة كاملة فجميع اللغات لها إيجابيات وسلبيات، واستخدام لغة وتفضيلها على الأخرى يكون تبعًا للتطبيقات المراد تطويرها واستخدامها أو
+        تبعًا لمستوى المبرمج ورغبته في تعلّم اللغة، ولغة ال SQL كغيرها من اللغات لها مجموعة من المميزات والسلبيات والتي تمّ إيجازها في النقاط الآتية:
+      </p>
+    </div>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 text-body text-primary-emphasis">مميزات لغة SQL:</p>
+      <ul>
+        <li class="fs-5 text-body">
+          لا تحتاج إلى كتابة كود؛ حيث أنه من السهل إدارة أنظمة قواعد البيانات باستخدام لغة SQL المعيارية دون الحاجة لكتابة كود حقيقي
+        </li>
+        <li class="fs-5 text-body">
+          يمكن نقل البيانات داخل القواعد التي تستخدم لغة SQL بكل سهولة ويسر، حيث تدعم هذه اللغة أجهزة الكمبيوتر الثابتة والمحمولة والأجهزة اللوحية
+          والخوادم وأجهزة الكمبيوتر المركزية، بالإضافة إلى أنه يمكن تشغيلها على أنظمة محليّة تستخدم الشبكات الداخلية أو الإنترنت.
+        </li>
+        <li class="fs-5 text-body">
+          تُعدّ SQL لغةً تفاعليّة حيث تستخدم للتواصل مع قاعدة البيانات للمساعدة في استرداد البيانات المتعلّقة بالاستفسارات المعقّدة في ثوانٍ.
+        </li>
+        <li class="fs-5 text-body">تُمكّن المستخدمين من إظهار الهيكل الخاص بقاعدة البيانات بأشكال مختلفة تبعًا للصلاحيّات التي يملكها المستخدم.</li>
+      </ul>
+    </div>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 text-body text-primary-emphasis">سلبيات لغة SQL:</p>
+      <ul>
+        <li class="fs-5 text-body">التحكّم الجزئي: فتبعًا لقواعد العمل المخفيّة؛ فإنه لا يمتلك المبرمجين السيطرة الكاملة على قاعدة البيانات.</li>
+        <li class="fs-5 text-body">التكلفة: لبعض إصدارات لغة SQL تكاليف تشغيلية عالية، مما يجعل من الصعب على بعض المبرمجين استخدامها.</li>
+        <li class="fs-5 text-body">واجهة المستخدم: للغة SQL واجهة استخدام معقّدة تجعل من الصعب على بعض المستخدمين التعامل معها.</li>
+      </ul>
+    </div>
+    <div class="footer p-4 rounded-5 bg-primary-subtle">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              About Apple App
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <a href="../appleApp/index.html" title="عن Apple App"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن Apple App </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              About E-book App
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="../e-bookApp/index.html" title="عن E-book App"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن E-book App </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              About Programming language App
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="index.html" title="عن Programming language App"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن Programming language App </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              About Store App
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="../storeApp/index.html" title="عن Store App"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن Store App </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+            >
+              About HTML
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="HTML.html" title="عن HTML"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن HTML </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTsix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTsix"
+            >
+              About CSS
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTsix" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="CSS.html" title="عن CSS"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن CSS </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeven"
+            >
+              About SQL
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="SQL.html" title="عن SQL"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن SQL </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFEight"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFEight"
+            >
+              About Python
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFEight" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="Python.html" title="عن Python"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن Python </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseNine"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseNine"
+            >
+              About PHP
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="PHP.html" title="عن PHP"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن PHP </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-3 rounded-5 bg-primary-subtle">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary">
+          <i class="fa-solid fa-apple-alt fa-xl" style="color: red"></i>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Peter Eshak Abdo, Apple</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://wa.me/message/AOH44Q2TY3H2E1"><i class="bi bi-whatsapp"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body" href="https://wa.me/qr/36KBTEORX2N3O1"><i class="bi bi-whatsapp"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://github.com/Peter-Eshak-Abdo"><i class="bi bi-github"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.facebook.com/PeterEshakAbdo"><i class="bi bi-facebook"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://youtube.com/@petereshak3109?si=aMQ3lbmePcqioSCv"><i class="bi bi-youtube"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="mailto:petereshak11@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        </li>
+      </ul>
+    </div>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/js/all.min.js"></script>
+  </body>
+</html>

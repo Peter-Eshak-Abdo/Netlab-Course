@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ar" translate="yes" data-bs-theme="auto" dir="rtl">
+  <head>
+    <script src="../../bootstrap/js/color-modes.js"></script>
+    <title>عن HTML</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Peter Eshak Abdo" />
+    <meta name="keywords" content="HTML" />
+    <meta name="description" content="HTML" />
+    <link rel="icon" type="image/x-icon" href="../../images/apple.png" />
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../bootstrap/bootstrap_icons/font/bootstrap-icons.min.css" />
+    <script src="../../js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-expand-lg sticky-top rounded-5 pe-3 bg-primary-subtle">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-apple-alt fa-xl" style="color: red;"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../../index.html">الصفحة الرئسية</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../appleApp/index.html">Apple</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../e-bookApp/index.html">E-Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="index.html">Programming language</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="../storeApp/index.html">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 active fw-bold text-primary" aria-current="page" href="#">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="CSS.html">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="SQL.html">SQL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="PHP.html">PHP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 text-body" href="Python.html">Python</a>
+          </li>
+        </ul>
+        <a class="btn link-info rounded-pill main-btn" href="Register.html">تسجيل دخول</a>
+        <div class="form-check form-switch mx-2">
+          <label for="checkTheme text-body">Dark Mode</label>
+          <input type="checkbox" class="form-check-input p-2" title="Theme Mode" role="switch" id="checkTheme"
+            id="flexSwitchCheckChecked" checked onclick="myFunction()" /> <!-- onclick="setDarkMode()" /> -->
+        </div>
+      </div>
+    </div>
+    <div class="landing d-flex justify-content-center align-items-center px-5 py-4 mb-3 rounded-pill bg-primary-subtle">
+      <div class="text-center">
+        <img src="../../images/html.jpeg" alt="HTML Icon" class="rounded-5" />
+        <p class="fs-1 fw-bolder text-primary">ما هي لغة HTML</p>
+        <p class="fs-4 text-body">
+          تُعد لغة ال HTML أحد لغات الترميز أو أنظمة ترميز النص المعيارية التي تتكون
+          من مجموعة من الرموز التي يتم إضافتها في ملفات النصوص للتحكّم في هيكلتها
+          وتنسيقها أو في العلاقة بين أجزائها، وتستخدم هذه اللغة لإنشاء الملفات على
+          الويب، حيث يتم من خلالها تحديد هيكل ونموذج صفحة الويب؛ أي الهيئه التي تبدو
+          عليها الصفحة بالإضافة إلى الوظائف الخاصة التي تؤديها، ويتم تنفيذ ذلك من
+          خلال ما يُسمّى بالوسوم، كما تمكّن هذه اللغة مستخدميها من إنشاء وهيكلة
+          الأقسام والنصوص والعناوين والروابط والاقتباسات لصفحات الويب، وتجدر الإشارة
+          إلى أنها لا تُعدّ لغة برمجة وذلك لكونها لا تُمكّن مستخدميها من إنشاء وظائف
+          ديناميكية، بل يقتصر دورها على تنظيم وتنسيق النصوص كما هو الحال في بعض
+          البرامج مثل مايكروسوفت وورد.
+        </p>
+        <a class="btn btn-primary rounded-pill main-btn text-body" href="#start">Get start</a>
+      </div>
+    </div>
+    <div class="navigation row justify-content-lg-center mb-4 rounded-5 mx-auto bg-primary-subtle">
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/html.jpeg"><img src="../../images/html.jpeg" alt="HTML Icon"
+              class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <P class="card-text text-body text-center fs-4">HTML Logo</P>
+        </div>
+      </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/html1.jpeg"><img src="../../images/html1.jpeg" alt="HTML Code"
+              class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">HTML Code</p>
+        </div>
+      </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/html2.png"><img src="../../images/html2.png" alt="HTML Code"
+              class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">HTML Code</p>
+        </div>
+      </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-lg-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/html3.jpeg"><img src="../../images/html3.jpeg" alt="HTML Code"
+              class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">HTML Code</p>
+        </div>
+      </div>
+
+      <div class="card bg-primary my-2 p-0 col-12 col-md-4 m-lg-2 rounded-5">
+        <div class="card-header">
+          <a target="_parent" href="../../images/html4.png"><img src="../../images/html4.png" alt="HTML Code"
+              class="img-fluid rounded-5" /></a>
+        </div>
+        <div class="card-body">
+          <p class="card-text text-body text-center fs-4">HTML Code</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 fw-bold text-primary-emphasis" id="start">علاقة لغة HTML بال CSS وال JavaScript</p>
+      <p class="fs-4 text-body">
+        على الرغم من أن لغة HTML لغة قوية إلا أنها لا تُعدّ كافية لبناء موقع
+        إلكتروني احترافي ومتجاوب بالكامل، حيث إنها تستخدم فقط لإضافة عناصر نصيّة
+        ولإنشاء هيكل لمحتويات الموقع، وتبعًا لهذا فإن هذه اللغة تعمل جيدًا مع
+        لغتين أخريين من لغات تصميم الواجهات الأمامية للمواقع الإلكترونية وهما لغتي
+        CSS و JavaScript، حيث أن هذه اللغات جميعها تُمكّن المبرمج عند استخدامها
+        معًا من تحقيق تجربة غنية للمستخدم وتنفيذ مهام متقدمة، والآتية هي مهام كل
+        من لغتي CSS و JavaScript:
+      </p>
+      <ul>
+        <li class="fs-5 text-body"><b>CSS: </b>
+          تُعدّ لغة CSS المسؤولة عن التصميم والتنسيق كما هو الحال في الخلفياتوالألوان والنماذج والمسافات والرسوم
+          المتحركة.</li>
+        <li class="fs-5 text-body"><b>Java Script: </b>
+          تُمكّن لغة Java Script المبرمج من إضافة الأجزاء والوظائفالديناميكيّة المتحركة للموقع مثل أشرطة التمرير ونوافذ
+          النص المنبثقةومعرض الصور.</li>
+      </ul>
+    </div>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 fw-bold text-primary-emphasis">إيجابيات وسلبيات لغة HTML</p>
+      <p class="fs-4 text-body">
+        تُعدّ لغة HTML اللغة الأساس في تطوير صفحات الويب، حيث تمّ تطويرها ونشرها
+        لأول مره من قبل العالم والأكاديمي تيم بيرنرز لي وزملائه، لتكون أساسًا
+        لظهور وانتشار الإنترنت، فيما استمر من تلاه من علماء في تعديلها وتطويرها
+        حتى وصلت إلى ما هي عليه الآن، وتمتلك هذه اللغة العديد من الإيجابيات
+        والسلبيات التي توضّحها النقاط الآتية:
+      </p>
+    </div>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 fw-bold text-primary-emphasis">إيجابيات لغة HTML:</p>
+      <ul style="list-style-type:disc;">
+        <li class="fs-5 text-body">تستخدم على نطاق واسع ولها العديد من المصادر، إضافةً إلى تواجد مجتمع كبير يتعامل بها
+          ويعمل على تطويرها.</li>
+        <li class="fs-5 text-body">تدعم جميع متصفحات الويب هذه اللغة، حيث تكون مُتضمّنة فيها بشكل أساسي.</li>
+        <li class="fs-5 text-body">تمتلك منحنى تعليمي مسطّح.</li>
+        <li class="fs-5 text-body">تُعدّ لغةً مفتوحة المصدر ومجانية بالكامل.</li>
+        <li class="fs-5 text-body">تمتلك ترميز متسق ومرتب.</li>
+        <li class="fs-5 text-body">يسهل ربطها مع لغات الواجهات الخلفية مثل لغة PHP و Node.js.</li>
+      </ul>
+    </div>
+    <div class="article p-4 mb-4 rounded-5 bg-primary-subtle">
+      <p class="fs-1 fw-bold text-primary-emphasis">سلبيات لغة HTML:</p>
+      <ul style="list-style-type:disc;">
+        <li class="fs-5 text-body">تستخدم عادةً في تطوير صفحات الويب الثابتة، حيث يلزم استخدام لغة JavaScript أو لغة
+          الواجهة الخلفية PHP لإضافة العناصر والوظائف الديناميكية والحركية للموقع.</li>
+        <li class="fs-5 text-body">لا تسمح للمستخدم بتنفيذ المنطق ونتيجةً لذلك؛ تحتاج جميع صفحات الويب لإنشائها بشكل
+          منفصل حتى لو كانت تستخدم العناصر نفسها مثل رأس وتذييل الصفحة.</li>
+        <li class="fs-5 text-body">تعمل بعض الميّزات والإصدارات الجديدة منها بشكل بطيء.</li>
+        <li class="fs-5 text-body">يصعب توقع سلوك المتصفح ففي بعض الأحيان لا تعرض المتصفحات القديمة الوسوم الحديثة.</li>
+      </ul>
+    </div>
+    <div class="footer p-4 rounded-5 bg-primary-subtle">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              About Apple App
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <a href="../appleApp/index.html" title="عن Apple App"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن Apple App </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              About E-book App
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="../e-bookApp/index.html" title="عن E-book App"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن E-book App </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              About Programming language App
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="index.html" title="عن Programming language App"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن Programming language App </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              About Store App
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="../storeApp/index.html" title="عن Store App"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن Store App </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+            >
+              About HTML
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="HTML.html" title="عن HTML"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن HTML </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTsix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTsix"
+            >
+              About CSS
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTsix" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="CSS.html" title="عن CSS"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن CSS </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeven"
+            >
+              About SQL
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="SQL.html" title="عن SQL"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن SQL </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFEight"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFEight"
+            >
+              About Python
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFEight" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="Python.html" title="عن Python"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن Python </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseNine"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseNine"
+            >
+              About PHP
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a href="PHP.html" title="عن PHP"
+                ><button type="button" class="pageLinks">
+                  <span class="text-body">عن PHP </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-3 rounded-5 bg-primary-subtle">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary">
+          <i class="fa-solid fa-apple-alt fa-xl" style="color: red"></i>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Peter Eshak Abdo, Apple</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://wa.me/message/AOH44Q2TY3H2E1"><i class="bi bi-whatsapp"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body" href="https://wa.me/qr/36KBTEORX2N3O1"><i class="bi bi-whatsapp"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://github.com/Peter-Eshak-Abdo"><i class="bi bi-github"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://www.facebook.com/PeterEshakAbdo"><i
+              class="bi bi-facebook"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="https://youtube.com/@petereshak3109?si=aMQ3lbmePcqioSCv"><i
+              class="bi bi-youtube"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-body-secondary" href="mailto:petereshak11@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        </li>
+      </ul>
+    </div>
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../bootstrap/js/all.min.js"></script>
+  </body>
+
+</html>
