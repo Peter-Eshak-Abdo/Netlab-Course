@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" translate="no" data-bs-theme="dark" dir="rtl">
-
+<html lang="ar" translate="no" data-bs-theme="auto" dir="rtl">
   <head>
     <script src="../bootstrap/js/color-modes.js"></script>
     <title>Register</title>
@@ -12,8 +11,8 @@
     <meta name="description" content="HTML,CSS,SQL,PHP,Python" />
     <link rel="icon" type="image/x-icon" href="../images/apple.png" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../bootstrap/css/all.min.css" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="../bootstrap/bootstrap_icons/font/bootstrap-icons.min.css" />
   </head>
@@ -29,101 +28,116 @@
     <div class="row g-3 text-bg-secondary m-1 mb-3 rounded-5 bg-primary-subtle w-auto">
       <div class="col-md-7 col-lg-8">
         <p class="fs-1 fw-bolder mb-4 text-primary">أنشاء حساب</p>
-        <form class="needs-validation" action="../index.html" method="post" novalidate>
+        <form class="needs-validation" action="../index.html" method="get">
           <div class="row g-3">
             <fieldset>
               <legend class="fs-2 fw-bold text-primary-emphasis">بيانات شخصية:</legend>
 
               <div class="col-sm-6">
-                <label for="firstName" title="ادخل اسمك بالكامل" class="form-label fs-4 fw-bold d-block text-body">الاسم
-                  الأول</label>
-                <input type="text" class="form-control w-auto p-lg-3 p-sm-1 m-1" placeholder="الاسم بالكامل" value=""
-                  required maxlength="30" minlength="7" autofocus><!--  id="firstName" -->
-                <div class="invalid-feedback">
-                  يرجى إدخال الاسم بالكامل صحيح.
-                </div>
+                <label for="firstName" title="ادخل اسمك بالكامل" class="form-label fs-4 fw-bold d-block text-body">الاسم الأول</label>
+                <input
+                  type="text"
+                  class="form-control w-auto p-lg-3 p-sm-1 m-1"
+                  placeholder="الاسم بالكامل"
+                  required
+                  maxlength="30"
+                  minlength="7"
+                  name="name"
+                  autocomplete="name"
+                  autofocus
+                /><!--  id="firstName" -->
+                <div class="invalid-feedback">يرجى إدخال الاسم بالكامل صحيح.</div>
               </div>
 
               <div class="col-12">
-                <label for="username" title="ادخل اسم مستخدم لك" class="form-label fs-4 fw-bold d-block text-body">اسم
-                  المستخدم</label>
+                <label for="username" title="ادخل اسم مستخدم لك" class="form-label fs-4 fw-bold d-block text-body">اسم المستخدم</label>
                 <div class="input-group has-validation">
                   <span class="input-group-text">@</span>
-                  <input type="text" class="form-control w-auto p-lg-3 p-sm-1 m-1" id="username"
-                    placeholder="اسم المستخدم" required>
-                  <div class="invalid-feedback">
-                    اسم المستخدم الخاص بك مطلوب.
-                  </div>
+                  <input
+                    type="text"
+                    class="form-control w-auto p-lg-3 p-sm-1 m-1"
+                    id="username"
+                    placeholder="اسم المستخدم"
+                    name="username"
+                    autocomplete="username"
+                    required
+                  />
+                  <div class="invalid-feedback">اسم المستخدم الخاص بك (مطلوب).</div>
                 </div>
               </div>
 
               <div class="col-12">
-                <label for="email" title="ادخل بريدك الالكتروني"
-                  class="form-label fs-4 fw-bold d-block text-body">البريد
-                  الإلكتروني <span class="text-danger fs-6">(اختياري)</span></label>
-                <input type="email" class="form-control w-auto p-lg-3 p-sm-1 m-1" id="email"
-                  placeholder="example@gmail.com">
-                <div class="invalid-feedback">
-                  يرجى إدخال عنوان بريد إلكتروني صحيح.
-                </div>
+                <label for="email" title="ادخل بريدك الالكتروني" class="form-label fs-4 fw-bold d-block text-body"
+                  >البريد الإلكتروني <span class="text-danger fs-6">(اختياري)</span></label
+                >
+                <input type="email" class="form-control w-auto p-lg-3 p-sm-1 m-1" id="email" placeholder="example@gmail.com" name="email" autocomplete="email" />
+                <div class="invalid-feedback">يرجى إدخال عنوان بريد إلكتروني صحيح.</div>
               </div>
 
               <div class="col-12">
-                <label for="password" title="ادخل الباسورد" class="form-label fs-4 fw-bold d-block text-body">الباسورد
-                  <span class="text-danger fs-6">(اختياري)</span></label>
-                <input type="password" class="form-control w-auto p-lg-3 p-sm-1 m-1" id="password" placeholder=""
-                  minlength="8" aria-describedby="passwordHelpBlock">
+                <label for="password" title="ادخل الباسورد" class="form-label fs-4 fw-bold d-block text-body"
+                  >الباسورد <span class="text-danger fs-6">(اختياري)</span></label
+                >
+                <input
+                  type="password"
+                  class="form-control w-auto p-lg-3 p-sm-1 m-1"
+                  id="password"
+                  placeholder=""
+                  minlength="8"
+                  aria-describedby="passwordHelpBlock"
+                  name="password"
+                  autocomplete="current-password"
+                />
                 <div id="passwordHelpBlock" class="form-text">
-                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces,
-                  special characters, or emoji.
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
                 </div>
-                <div class="invalid-feedback">
-                  يرجى إدخال الباسورد صحيح.
-                </div>
+                <div class="invalid-feedback">يرجى إدخال الباسورد صحيح.</div>
               </div>
 
               <div class="col-12">
-                <label for="address" title="العنوان" class="form-label fs-4 fw-bold d-block text-body">العنوان <span
-                    class="text-danger fs-6">(اختياري)</span></label>
-                <input type="text" class="form-control w-auto p-lg-3 p-sm-1 m-1" id="address"
-                  placeholder="1234 الشارع الأول" minlength="15">
-                <div class="invalid-feedback">
-                  يرجى إدخال عنوان الخاص بك.
-                </div>
+                <label for="address" title="العنوان" class="form-label fs-4 fw-bold d-block text-body"
+                  >العنوان <span class="text-danger fs-6">(اختياري)</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control w-auto p-lg-3 p-sm-1 m-1"
+                  id="address"
+                  placeholder="1234 الشارع الأول"
+                  minlength="15"
+                  name="address"
+                  autocomplete="address-level1"
+                />
+                <div class="invalid-feedback">يرجى إدخال عنوان الخاص بك.</div>
               </div>
 
               <h4 class="mb-3 fs-4 text-body">النوع</h4>
               <div class="my-3">
                 <div class="form-check">
-                  <input id="genderM" title="رجل/ولد" name="gender" type="radio" class="form-check-input d-inline fs-3"
-                    required>
+                  <input id="genderM" title="رجل/ولد" value="Male" name="gender" type="radio" class="form-check-input d-inline fs-3" required />
                   <label class="form-check-label fs-5 text-body" for="genderM">ذكر</label>
                 </div>
                 <div class="form-check">
-                  <input id="genderF" title="سيدة/بنت" name="gender" type="radio" class="form-check-input d-inline fs-3"
-                    required>
+                  <input id="genderF" title="سيدة/بنت" value="Female" name="gender" type="radio" class="form-check-input d-inline fs-3" required />
                   <label class="form-check-label fs-5 text-body" for="genderF">انثي</label>
                 </div>
                 <div class="form-check">
-                  <input id="genderN" title="لا اختيار" name="gender" type="radio"
-                    class="form-check-input d-inline fs-3" checked required>
+                  <input id="genderN" title="لا اختيار" value="None" name="gender" type="radio" class="form-check-input d-inline fs-3"  required />
                   <label class="form-check-label fs-5 text-body" for="genderN">اُفضل عدم الاختيار</label>
                 </div>
               </div>
 
               <div class="col-sm-6">
-                <label for="birthdayDate" title="ادخل تاريخ الميلاد" class="form-label fs-4 text-body">تاريخ الميلاد
-                  <span class="text-danger fs-6">(اختياري)</span></label>
-                <input type="date" class="form-control" id="birthdayDate" value="">
-                <div class="invalid-feedback text-bg-danger">
-                  يرجى إدخال تاريخ الميلاد صحيح.
-                </div>
+                <label for="birthdayDate" title="ادخل تاريخ الميلاد" class="form-label fs-4 text-body"
+                  >تاريخ الميلاد <span class="text-danger fs-6">(اختياري)</span></label
+                >
+                <input type="date" class="form-control" id="birthdayDate" name="birthdayDate" />
+                <div class="invalid-feedback text-bg-danger">يرجى إدخال تاريخ الميلاد صحيح.</div>
               </div>
             </fieldset>
 
             <div class="col-md-5">
               <label for="country" class="form-label fs-4 text-body">البلد</label>
-              <select class="form-select ps-5" id="country" required>
+              <select class="form-select ps-5" id="country" name="country" required>
                 <option value="">اختر...</option>
                 <option value="argentina">الأرجنتين</option>
                 <option value="australia">استراليا</option>
@@ -203,14 +217,12 @@
                 <option value="yemen">يمن</option>
                 <option value="zimbabwe">زمبابوي</option>
               </select>
-              <div class="invalid-feedback">
-                يرجى اختيار بلد صحيح.
-              </div>
+              <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
             </div>
 
             <div class="col-md-5">
               <label for="state" class="form-label fs-4 text-body">المحافظة</label>
-              <select class="form-select ps-5" id="state" required>
+              <select class="form-select ps-5" id="state" name="state" required>
                 <option value="">اختر...</option>
                 <option>الإسكندرية</option>
                 <option>الإسماعيلية</option>
@@ -240,74 +252,154 @@
                 <option>المنيا</option>
                 <option>الوادي الجديد</option>
               </select>
-              <div class="invalid-feedback">
-                يرجى اختيار بلد صحيح.
-              </div>
+              <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
             </div>
 
-            <hr class="my-4">
+            <div class="col-md-5">
+              <label for="country" class="form-label fs-4 text-body">البلد</label>
+              <input type="text" list="countrys" class="form-select ps-5" id="country" name="country" required>
+              <datalist id="countrys">
+                <option value="argentina">الأرجنتين</option>
+                <option value="australia">استراليا</option>
+                <option value="bahrain">البحرين</option>
+                <option value="belgium">بلجيكا</option>
+                <option value="brazil">برازيل</option>
+                <option value="canada">كندا</option>
+                <option value="china">الصين</option>
+                <option value="colombia">كلومبيا</option>
+                <option value="costa Rica">كوستا ريكا</option>
+                <option value="croatia">كوروتيا</option>
+                <option value="denmark">دنيمارك</option>
+                <option value="ecuador">إكوادور</option>
+                <option value="egypt">مصر</option>
+                <option value="ethiopia">أثيوبيا</option>
+                <option value="france">فرنسا</option>
+                <option value="germany">المانيا</option>
+                <option value="ghana">غانا</option>
+                <option value="greece">اليونان</option>
+                <option value="guinea">غنيا</option>
+                <option value="hungary">المجر</option>
+                <option value="iceland">ايسلندا</option>
+                <option value="india">الهند</option>
+                <option value="indonesia">اندونسيا</option>
+                <option value="iran">ايران</option>
+                <option value="iraq">العراق</option>
+                <option value="italy">ايطاليا</option>
+                <option value="jamaica">جمايكا</option>
+                <option value="japan">يابان</option>
+                <option value="jordan">الاردن</option>
+                <option value="kazakhstan">كذخستان</option>
+                <option value="kenya">كنيا</option>
+                <option value="korea">كوريا الشمالية</option>
+                <option value="kuwait">الكويت</option>
+                <option value="lebanon">لبنان</option>
+                <option value="liberia">ليبريا</option>
+                <option value="libya">ليبيا</option>
+                <option value="madagascar">مدغشقر</option>
+                <option value="malawi">ملاوي</option>
+                <option value="malaysia">مليزيا</option>
+                <option value="mexico">المكسيك</option>
+                <option value="monaco">موناكو</option>
+                <option value="morocco">المغرب</option>
+                <option value="netherlands">هولندا</option>
+                <option value="new zealand">نيو زلاند</option>
+                <option value="nigeria">نيجيريا</option>
+                <option value="north macedonia">مقدونيا الشمالية</option>
+                <option value="norway">النرويج</option>
+                <option value="oman">عمان</option>
+                <option value="pakistan">باكستان</option>
+                <option value="panama">بنما</option>
+                <option value="peru">بيرو</option>
+                <option value="philippines">فيلبين</option>
+                <option value="poland">بولندا</option>
+                <option value="portugal">بورتغال</option>
+                <option value="qatar">قطر</option>
+                <option value="russia">روسيا</option>
+                <option value="south korea">كوريا الجنوبية</option>
+                <option value="saudi arabia">السعودية</option>
+                <option value="senegal">سنغال</option>
+                <option value="serbia">صربيا</option>
+                <option value="somalia">الصومال</option>
+                <option value="south africa">جنوب افرقيا</option>
+                <option value="south sudan">جنوب السودان</option>
+                <option value="spain">اسبانيا</option>
+                <option value="sudan">السودان</option>
+                <option value="sweden">السويد</option>
+                <option value="switzerland">سويزلاند</option>
+                <option value="syria">سوريا</option>
+                <option value="thailand">تايلاند</option>
+                <option value="turkey">تركيا</option>
+                <option value="ukraine">اوكرانيا</option>
+                <option value="united arab emirates">الأمارات</option>
+                <option value="united kingdom">بريطانيا</option>
+                <option value="uruguay">اورجواي</option>
+                <option value="vietnam">فتنام</option>
+                <option value="yemen">يمن</option>
+                <option value="zimbabwe">زمبابوي</option>
+                </datalist>
+              <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
+            </div>
+
+            <hr class="my-4" />
 
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="html" checked>
               <label class="form-check-label text-body fs-5" for="html">HTML</label>
+              <input type="checkbox" class="form-check-input" id="html" value="html" name="proLan" />
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="css">
+              <input type="checkbox" class="form-check-input" id="css" value="css" name="proLan" />
               <label class="form-check-label text-body fs-5" for="css">CSS</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="javascript">
+              <input type="checkbox" class="form-check-input" id="javascript" value="javascript" name="proLan" />
               <label class="form-check-label text-body fs-5" for="javascript">Javascript</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="mySQL">
+              <input type="checkbox" class="form-check-input" id="mySQL" value="mySQL" name="proLan" />
               <label class="form-check-label text-body fs-5" for="mySQL">MySQL</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="bootstrap">
+              <input type="checkbox" class="form-check-input" id="bootstrap" value="bootstrap" name="proLan" />
               <label class="form-check-label text-body fs-5" for="bootstrap">Bootstrap</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="python">
+              <input type="checkbox" class="form-check-input" id="python" value="python" name="proLan" />
               <label class="form-check-label text-body fs-5" for="python">Python</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="c">
+              <input type="checkbox" class="form-check-input" id="c" value="c" name="proLan" />
               <label class="form-check-label text-body fs-5" for="c">C</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="c++">
+              <input type="checkbox" class="form-check-input" id="c++" value="c++" name="proLan" />
               <label class="form-check-label text-body fs-5" for="c++">C++</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="c#">
+              <input type="checkbox" class="form-check-input" id="c#" value="c#" name="proLan" />
               <label class="form-check-label text-body fs-5" for="c#">C#</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="java">
+              <input type="checkbox" class="form-check-input" id="java" value="java" name="proLan" />
               <label class="form-check-label text-body fs-5" for="java">Java</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="kotlin">
+              <input type="checkbox" class="form-check-input" id="kotlin" value="kotlin" name="proLan" />
               <label class="form-check-label text-body fs-5" for="kotlin">Kotlin</label>
             </div>
             <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="flutter">
+              <input type="checkbox" class="form-check-input" id="flutter" value="flutter" name="proLan" />
               <label class="form-check-label text-body fs-5" for="flutter">Flutter</label>
             </div>
-
           </div>
 
-          <hr class="my-4">
-
-          <button class="w-100 btn btn-primary btn-lg" type="submit">تسجيل الدخول</button>
+          <hr class="my-4" />
+          <button class="w-50 btn btn-primary btn-lg" type="submit" value="submit">تسجيل الدخول</button>
+          <button class="w-25 btn btn-secondary btn-lg" type="reset" value="reset">مسح البيانات</button>
         </form>
       </div>
     </div>
 
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../bootstrap/js/all.min.js"></script>
-
   </body>
-
 </html>
