@@ -70,7 +70,14 @@
                 <label for="email" title="ادخل بريدك الالكتروني" class="form-label fs-4 fw-bold d-block text-body"
                   >البريد الإلكتروني <span class="text-danger fs-6">(اختياري)</span></label
                 >
-                <input type="email" class="form-control w-auto p-lg-3 p-sm-1 m-1" id="email" placeholder="example@gmail.com" name="email" autocomplete="email" />
+                <input
+                  type="email"
+                  class="form-control w-auto p-lg-3 p-sm-1 m-1"
+                  id="email"
+                  placeholder="example@gmail.com"
+                  name="email"
+                  autocomplete="email"
+                />
                 <div class="invalid-feedback">يرجى إدخال عنوان بريد إلكتروني صحيح.</div>
               </div>
 
@@ -121,7 +128,7 @@
                   <label class="form-check-label fs-5 text-body" for="genderF">انثي</label>
                 </div>
                 <div class="form-check">
-                  <input id="genderN" title="لا اختيار" value="None" name="gender" type="radio" class="form-check-input d-inline fs-3"  required />
+                  <input id="genderN" title="لا اختيار" value="None" name="gender" type="radio" class="form-check-input d-inline fs-3" required />
                   <label class="form-check-label fs-5 text-body" for="genderN">اُفضل عدم الاختيار</label>
                 </div>
               </div>
@@ -135,7 +142,7 @@
               </div>
             </fieldset>
 
-            <div class="col-md-5">
+            <!-- <div class="col-md-5">
               <label for="country" class="form-label fs-4 text-body">البلد</label>
               <select class="form-select ps-5" id="country" name="country" required>
                 <option value="">اختر...</option>
@@ -218,46 +225,11 @@
                 <option value="zimbabwe">زمبابوي</option>
               </select>
               <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
-            </div>
-
-            <div class="col-md-5">
-              <label for="state" class="form-label fs-4 text-body">المحافظة</label>
-              <select class="form-select ps-5" id="state" name="state" required>
-                <option value="">اختر...</option>
-                <option>الإسكندرية</option>
-                <option>الإسماعيلية</option>
-                <option>أسوان</option>
-                <option>أسيوط</option>
-                <option>الأقصر</option>
-                <option>البحر الأحمر</option>
-                <option>البحيرة</option>
-                <option>بني سويف</option>
-                <option>بورسعيد</option>
-                <option>جنوب سيناء</option>
-                <option>الجيزة</option>
-                <option>الدقهلية</option>
-                <option>دمياط</option>
-                <option>سوهاج</option>
-                <option>السويس</option>
-                <option>الشرقية</option>
-                <option>شمال سيناء</option>
-                <option>الغربية</option>
-                <option>الفيوم</option>
-                <option>القاهرة</option>
-                <option>القليوبية</option>
-                <option>قنا</option>
-                <option>كفر الشيخ</option>
-                <option>مطروح</option>
-                <option>المنوفية</option>
-                <option>المنيا</option>
-                <option>الوادي الجديد</option>
-              </select>
-              <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
-            </div>
+            </div> -->
 
             <div class="col-md-5">
               <label for="country" class="form-label fs-4 text-body">البلد</label>
-              <input type="text" list="countrys" class="form-select ps-5" id="country" name="country" required>
+              <input type="text" list="countrys" class="form-select ps-5" id="country" name="country" required />
               <datalist id="countrys">
                 <option value="argentina">الأرجنتين</option>
                 <option value="australia">استراليا</option>
@@ -336,7 +308,42 @@
                 <option value="vietnam">فتنام</option>
                 <option value="yemen">يمن</option>
                 <option value="zimbabwe">زمبابوي</option>
-                </datalist>
+              </datalist>
+              <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="state" class="form-label fs-4 text-body">المحافظة</label>
+              <select class="form-select ps-5" id="state" name="state" required>
+                <option value="">اختر...</option>
+                <option>الإسكندرية</option>
+                <option>الإسماعيلية</option>
+                <option>أسوان</option>
+                <option>أسيوط</option>
+                <option>الأقصر</option>
+                <option>البحر الأحمر</option>
+                <option>البحيرة</option>
+                <option>بني سويف</option>
+                <option>بورسعيد</option>
+                <option>جنوب سيناء</option>
+                <option>الجيزة</option>
+                <option>الدقهلية</option>
+                <option>دمياط</option>
+                <option>سوهاج</option>
+                <option>السويس</option>
+                <option>الشرقية</option>
+                <option>شمال سيناء</option>
+                <option>الغربية</option>
+                <option>الفيوم</option>
+                <option>القاهرة</option>
+                <option>القليوبية</option>
+                <option>قنا</option>
+                <option>كفر الشيخ</option>
+                <option>مطروح</option>
+                <option>المنوفية</option>
+                <option>المنيا</option>
+                <option>الوادي الجديد</option>
+              </select>
               <div class="invalid-feedback">يرجى اختيار بلد صحيح.</div>
             </div>
 
