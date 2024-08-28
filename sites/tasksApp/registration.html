@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>Sign Up Form</h1>
+    <form action="index.html" method="get" autocomplete="on">
+      <label>Full Name</label>
+      <input
+        type="text"
+        name="FName"
+        title="Full Name"
+        placeholder="Example example example"
+        maxlength="30"
+        required
+        autofocus
+        autocomplete="name"
+      /><br />
+      <label>Phone Number</label>
+      <input type="tel" name="PNum" title="Phone Number" placeholder="012xxxxxxxx" maxlength="11" minlength="11" autocomplete="cc-number" /><br />
+      <label>Your Email</label>
+      <input type="email" name="Email" title="Email" placeholder="example@gmail.com" autocomplete="email" /><br />
+      <label>Create New Password</label>
+      <input type="password" name="password" title="Password" autocomplete="current-password" /><br />
+      <label>Your Age</label>
+      <input type="range" name="age" title="Age" min="7" max="81" step="1" /><input type="number" name="Age" title="Age" min="7" max="80" /><br />
+      <label>Male</label>
+      <input type="radio" name="gender" title="Male OR Man OR Boy" value="male" />
+      <label>Female</label>
+      <input type="radio" name="gender" title="Female OR woman OR girl" value="female" />
+      <label>Prefer not to say</label>
+      <input type="radio" name="gender" title="Non OR Null" value="non" /><br />
+      <p>what language did you larened?</p>
+      <label>HTML</label>
+      <input type="checkbox" name="proLang" title="HTML" value="HTML" />
+      <label>CSS</label>
+      <input type="checkbox" name="proLang" title="CSS" value="CSS" />
+      <label>JavaScript</label>
+      <input type="checkbox" name="proLang" title="JavaScript" value="JavaScript" />
+      <label>React</label>
+      <input type="checkbox" name="proLang" title="React" value="React" /><br />
+      <label for="">Favorit programming languages :</label>
+      <input list="proLangs" name="proLangs" title="Programming languages" />
+      <datalist id="proLangs">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="Bootstrap"></option>
+        <option value="Tilwend"></option>
+        <option value="Sass"></option>
+        <option value="Javascript"></option>
+        <option value="React"></option>
+        <option value="Angular"></option>
+        <option value="Typescript"></option>
+        <option value="Next.JS"></option>
+        <option value="Node.JS"></option>
+        <option value="Python"></option>
+        <option value="Go"></option>
+        <option value="Flutter"></option>
+        <option value="Dart"></option>
+        <option value="Java"></option>
+        <option value="C"></option>
+        <option value="C#"></option>
+        <option value="C++"></option>
+        <option value="Kotlin"></option>
+        <option value="Swift"></option>
+        <option value="Ruby"></option>
+        <option value="XML"></option>
+        <option value="Vue"></option>
+        <option value="JSON"></option>
+        <option value="Jquary"></option>
+        <option value="SQL"></option>
+        <option value="PHP"></option>
+      </datalist>
+
+      <hr />
+      <input type="submit" name="submit" title="Submit Data" value="Submit" />
+      <input type="reset" name="reset" title="Reset Data" value="Reset" />
+      <a href="index.html">Gest</a>
+    </form>
+  </body>
+</html>
