@@ -38,6 +38,9 @@ body {
 
 /* End scrollbar */
 /* Start Navbar */
+.logo {
+  color: red;
+}
 .navbar {
   padding: 5px;
   margin: 0px;
