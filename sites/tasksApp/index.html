@@ -9,17 +9,74 @@
     <meta name="description" content="" />
     <link rel="icon" type="image/x-icon" href="../../images/icon.jpg" />
     <style>
+      body {
+        background-image: url("../../images/bg3.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
       p {
         color: rebeccapurple;
       }
       strong,b {
         font-weight: 900;
       }
+      div.section1 {
+        border:#92ffff 10px double;
+        border-radius: 50px;
+        padding: 0px 10px;
+        background-image: url("../../images/bg1.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        /* filter: brightness(150%); */
+        color: #D6EEEE;
+        /* opacity: 0.7; */
+      }
+      div.section2 {
+        border:#cdff42 15px groove;
+        border-radius: 50px;
+        padding: 10px 20px;
+        background-image: url("../../images/bg2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 0.7;
+        color: #fff;
+      }
+       h1.section1,h2.section1,h3.section1,h4.section1,h5.section1,h6.section1 {
+        border-radius: 30px;
+        border-color: #8077fe;
+        border-width: 10px;
+       }
+      h1.section1 {
+        border-bottom-style: dotted;
+      }
+      h2.section1 {
+        border-top-style: groove;
+      }
+      h3.section1 {
+        border-left-style: solid;
+        border-bottom-style: solid;
+      }
+      h4.section1 {
+        border-top-style: inset;
+        border-right-style: inset;
+      }
+      h5.section1 {
+        border-left-style: outset;
+        border-right-style: outset;
+      }
+      h6.section1 {
+        border-style: ridge;
+      }
+
     </style>
   </head>
   <body>
-    <h1>Store App</h1><hr><hr><br>
-    <h1>First Heading & The biggest one</h1>
+    <h1>Tasks App</h1><hr><hr><br>
+    <div class="section1">
+    <h1 class="section1">First Heading & The biggest one</h1>
     <p>
       That it called a paragraph <br />
       <b>Lorem</b> ipsum dolor sit amet, <i>consectetuer</i> adipiscing elit. <mark>Maecenas</mark> porttitor congue massa. <small>Fusce</small> posuere, <del>magna</del> sed pulvinar ultricies, purus
@@ -30,7 +87,7 @@
       (X+Y)<sup>2</sup> = X<sup>2</sup> + Y<sup>2</sup> + 2XY
     </p>
     <hr />
-    <h2>Second Heading</h2>
+    <h2 class="section1">Second Heading</h2>
     <p>
       <strong>Lorem</strong> ipsum dolor sit amet, <em>consectetuer</em> adipiscing elit. <mark>Maecenas</mark> porttitor congue massa. <small>Fusce</small> posuere, <ins>magna</ins> sed pulvinar ultricies, purus
       lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
@@ -40,7 +97,7 @@
       2H + O --> H<sub>2</sub>O
     </p>
     <hr />
-    <h3>Theard Heading</h3>
+    <h3 class="section1">Theard Heading</h3>
     <p>
       <abbr title="Pro Evolution Soccer">PES</abbr> the first and original 3D soccer game - makes its return to the Nintendo 3DS handheld system.<br><br>
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus
@@ -55,7 +112,7 @@
       </address>
     </p>
     <hr />
-    <h4>Fourth Heading</h4>
+    <h4 class="section1">Fourth Heading</h4>
     <p>
       I love football :: <bdo dir="rtl">I love football</bdo><br><br>
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus
@@ -73,7 +130,7 @@
       </blockquote>
     </p>
     <hr />
-    <h5>Fiveth Heading</h5>
+    <h5 class="section1">Fiveth Heading</h5>
     <p>
       <img src="../../images/th.jpeg" width="220" height="277" alt="The Last Supper">
       <p><cite>The Last Supper</cite> by Davinci. Painted in 15's.</p>
@@ -85,7 +142,7 @@
       <p>WWF's goal is to: <q>Recognizing that the problems facing our planet are increasingly more complex and urgent, WWF focuses its work on six ambitious goals. Through this integrative approach, we can challenge the planet’s greatest threats and ensure a healthy future for people and nature.</q></p>
     </p>
     <hr />
-    <h6>sixth Heading & the smallest</h6>
+    <h6 class="section1">sixth Heading & the smallest</h6>
     <p>
       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus
       lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
@@ -93,6 +150,8 @@
       porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem
       venenatis eleifend. Ut nonummy.
     </p>
+
+    </div>
     <hr />
     <hr />
     <br />
@@ -111,6 +170,7 @@
       </p>
     </Pre>
     <br><br>
+    <div class="section2">
     Ordered list with numbre
     <ol type="1">
       <li>List iteam 1</li>
@@ -206,7 +266,7 @@
         <td>none</td>
         <td>none</td>
       </tr>
-    </table><br>
+    </table></div><br>
     <img src="../../images/th.jpeg" width="500" height="300" alt="The Last Supper"><br>
 <br><br>
     <iframe src="https://www.facebook.com/PeterEshakAbdo" name="fb" title="Facebook Account"></iframe>
