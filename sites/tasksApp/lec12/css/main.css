@@ -1,0 +1,86 @@
+* {
+  font-size: 30px;
+}
+body {
+  background-color: rgba(173, 45, 45, 0.451);
+  background-image: url("../images/bg3.jpg");
+  background-size: contain;
+  background-position: auto 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.p1,
+.p2,
+.p3 {
+  padding: 10px 20px;
+}
+.p1 {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  font-weight: 700;
+}
+.p2 {
+  border-color: red;
+  border-style: solid;
+  border-radius: 30px;
+  font-size: 25px;
+}
+.p3 {
+  border-bottom-color: red;
+  border-bottom-style: solid;
+  font-size: 20px;
+}
+table {
+  /* border-radius: 30px; */
+  border-style: groove;
+  border-width: 3px;
+  border-color: aquamarine;
+}
+td {
+  padding: 5px;
+}
+.tableHeading {
+  background-color: black;
+  color: white;
+}
+#day1 {
+  letter-spacing: 50px;
+}
+#day2 {
+  letter-spacing: -3px;
+}
+.words {
+  word-spacing: 50px;
+}
+#lorem1,#lorem2,#lorem3,#lorem4,#lorem5 {
+  margin: 100px 10px;
+}
+#lorem1 {
+  word-spacing: 50px;
+}
+#lorem2 {
+  letter-spacing: 50px;
+}
+#lorem3 {
+  line-height: 80px;
+}
+#lorem4 {
+  letter-spacing: -2px;
+  word-spacing: -2px;
+}
+#lorem5 {
+  text-shadow: 5px 5px 15px greenyellow , 15px 15px 15px green;
+}
+
+#lorem6 {
+  margin: 50px;
+  border-radius: 20px;
+  border-style: inset;
+  border-color: burlywood;
+  border-width: 5px;
+  outline-style: groove;
+  outline-width: 5px;
+  outline-color: blanchedalmond;
+  outline-offset: 30px;
+}
