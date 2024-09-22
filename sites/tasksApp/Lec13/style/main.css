@@ -1,0 +1,83 @@
+p#heading {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  background-color: green;  
+  border-radius: 20px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  padding: 5px 5px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+div.prag {
+  background-color: rgb(222, 250, 240);
+  border-radius: 20px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  margin-bottom: 40px;
+}
+
+p.pra {
+  color: green;
+  font-size: 20px;
+}
+
+p#pra1 {
+  text-align: center;
+}
+
+p#pra2 {
+  letter-spacing: 20px;
+}
+
+p#pra3 {
+  word-spacing: 20px;
+  margin-bottom: 100px;
+}
+
+p#title {
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(232, 255, 247);
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  outline-color: green;
+  outline-width: 10px;
+  outline-style: solid;
+  padding: 15px;
+}
+
+p#Heading1 {
+  font-size: 35px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+  font-weight: 700;
+}
+
+p#Heading2 {
+  font-size: 30px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: red;
+}
+
+p#Heading3 {
+  font-size: 25px;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: red;
+}
+
+p#Heading4 {
+  font-size: 20px;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: red;
+  text-decoration-thickness: 10px;
+}
