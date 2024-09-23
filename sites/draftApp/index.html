@@ -27,6 +27,10 @@
         width: 200px;
         height: 150px;
       }
+      .pic1,.pic2,.pic3 {
+        max-width: 400px;
+        max-height: 400px;
+      }
     </style>
     <script>
       var draggedElement;
@@ -110,6 +114,21 @@
       id="divDropImg"
       class="img-fluid rounded-5"
     />
+    <br>
+    <img src="../../images/collection.png" alt="Collection" usemap="#progLangPages">
+    <map name="progLangPages">
+      <area shape="rect" coords="1,1,240,284" href="../proLanApp/CSS.html" alt="CSS Page">
+      <area shape="rect" coords="246,1,527,277" href="../proLanApp/HTML.html" alt="HTMl Page">
+      <area shape="rect" coords="43,289,265,412" href="../proLanApp/PHP.html" alt="PHP Page">
+      <area shape="rect" coords="1,414,293,527" href="../proLanApp/SQL.html" alt="SQL Page">
+      <area shape="rect" coords="308,280,527,525" href="../proLanApp/Python.html" alt="Python Page">
+    </map>
+    <br>
+    <picture class="pic">
+      <source media="(min-width: 950px)" srcset="../../images/html.jpg"class="pic1">
+      <source media="(min-width: 400px)" srcset="../../images/css.jpeg" class="pic2">
+      <img src="../../images/php.jpg" alt="PHP image" class="pic3">
+    </picture>
 
     <div class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 border-top rounded-5 bg-primary-subtle">
       <div class="col-md-4 d-flex">

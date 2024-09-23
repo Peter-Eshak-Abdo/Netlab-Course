@@ -1,9 +1,9 @@
-.firebase
 .github
-public/bootstrap_icons
-.firebaserc
+bootstrap
+node_modules
 .hintrc
-firebase.json
+package-lock.json
+package.json
 
 ###################################
 # .firebase
