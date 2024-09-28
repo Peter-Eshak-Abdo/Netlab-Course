@@ -8,279 +8,16 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link rel="icon" type="image/x-icon" href="../../images/icon.jpg" />
+    <link rel="stylesheet" href="../../css/main.css">
     <script src="https://kit.fontawesome.com/3c81f02199.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="../../css/fontawesome.css">
     <link rel="stylesheet" href="../../css/all.css"> -->
-    <style>
-      body {
-        background-image: url("../../images/bg3.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-      p {
-        color: rebeccapurple;
-      }
-      strong,b {
-        font-weight: 900;
-      }
-      div.section1 {
-        border:#92ffff 10px double;
-        border-radius: 50px;
-        padding: 0px 10px;
-        background-image: url("../../images/bg1.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-        /* filter: brightness(150%); */
-        color: #D6EEEE;
-        /* opacity: 0.7; */
-      }
-      div.section2 {
-        border:#cdff42 15px groove;
-        border-radius: 50px;
-        padding: 10px 20px;
-        background-image: url("../../images/bg2.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        opacity: 0.7;
-        color: #fff;
-      }
-       h1.section1,h2.section1,h3.section1,h4.section1,h5.section1,h6.section1 {
-        border-radius: 30px;
-        border-color: #8077fe;
-        border-width: 10px;
-       }
-      h1.section1 {
-        border-bottom-style: dotted;
-      }
-      h2.section1 {
-        border-top-style: groove;
-      }
-      h3.section1 {
-        border-left-style: solid;
-        border-bottom-style: solid;
-      }
-      h4.section1 {
-        border-top-style: inset;
-        border-right-style: inset;
-      }
-      h5.section1 {
-        border-left-style: outset;
-        border-right-style: outset;
-      }
-      h6.section1 {
-        border-style: ridge;
-      }
-      p#task9 {
-        font-size: 50px;
-        text-shadow: 10px 10px 10px black;
-      }
-      p#task9-40 {
-        font-size: 35px;
-        text-decoration: dashed;
-      }
-      p#task9-41 {
-        font-size: 35px;
-        text-decoration: dotted;
-      }
-      p#task9-42 {
-        font-size: 35px;
-        text-decoration: double;
-      }
-      p#task9-43 {
-        font-size: 35px;
-        text-decoration: line-through;
-      }
-      p#task9-44 {
-        font-size: 35px;
-        text-decoration: overline;
-      }
-      p#task9-45 {
-        font-size: 35px;
-        text-decoration: solid;
-      }
-      p#task9-46 {
-        font-size: 35px;
-        text-decoration: underline;
-      }
-      p#task9-47 {
-        font-size: 35px;
-        text-decoration: wavy;
-      }
-      p#task9-20 {
-        font-size: 35px;
-        line-height: 2.5;
-      }
-      p#task9-21 {
-        font-size: 35px;
-        letter-spacing: 8px;
-      }
-      p#task9-22 {
-        font-size: 35px;
-        letter-spacing: -5px;
-      }
-      p#task9-30 {
-        font-size: 35px;
-        word-spacing: 50px;
-      }
-      p#task9-31 {
-        font-size: 35px;
-        word-spacing: -50px;
-      }
-      p#task10-1 {
-        font-size: 25px;
-        line-height: 30px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        background-color: blue;
-        color: white;
-      }
-      p#task10-2 {
-        font-size: 25px;
-        font-family: Papyrus;
-        font-weight: 900;
-      }
-      #task10-3 {
-        background-color: rgb(158, 25, 47);
-        padding: 20px 20px 20px 50px;
-        /* list-style-position: outside; */
-      }
-      #task10-30 {
-        background-color: pink;
-        padding: 15px 0px;
-        font-size: 25px;
-      }
-      #task10-31 {
-        background-color: blue;
-        padding: 15px 15px 15px 25px;
-        /* list-style-position: inside; */
-      }
-      #task10-32 {
-        background-color: #92ffff;
-        margin: 8px;
-        font-size: 25px;
-      }
-      /* table.task10-4 {
-        border-style: none;
-      } */
-      /* tr.task10-40 {
-        border-style: none;
-        background-color: #4fae46;
-        color: whitesmoke;
-        font-weight: 700;
-        font-size: 30px;
-      } */
-      table.task10-4,th.task10-40,td.task10-41 {
-        border: none;
-       }
-      th.task10-40 {
-        background-color: #4fae46;
-        color: whitesmoke;
-        font-weight: 700;
-        font-size: 30px;
-        padding: 8px 100px 8px 10px;
-      }
-      td.task10-41 {
-        background-color: #7e7e7e;
-        color: whitesmoke;
-        font-size: 20px;
-        padding: 5px;
-      }
-      i {
-        font-size: 35px;
-        margin: 10px;
-      }
-      ul.task10-6 {
-        list-style-image: url("../../images/sqpurple.jpg");
-      }
-      ul.task10-70 {
-        list-style-type: circle;
-      }
-      ul.task10-71 {
-        list-style-type: square;
-      }
-      ul.task10-72 {
-        list-style-type: decimal;
-      }
-      ul.task10-73 {
-        list-style-type: upper-roman;
-      }
-      ul.task10-80 {
-        list-style-position: outside;
-      }
-      li#task10-801 {
-        border: solid 1px black;
-        width: 100px;
-      }
-      ul.task10-81 {
-        list-style-position: inside;
-      }
-      li#task10-811 {
-        border: solid 1px black;
-        width: 100px;
-      }
-      a.task10-90 {
-        color: black;
-      }
-      a.task10-90:hover {
-        color: rgb(123, 137, 123);
-      }
-      a.task10-91 {
-        text-decoration: none;
-        color: black;
-      }
-      a.task10-91:hover {
-        text-decoration: underline;
-        color: rgb(184, 198, 184);
-      }
-      a.task10-92 {
-        border: solid 5px rgb(115, 123, 115);
-        padding: 10px 15px;
-        background-color: white;
-        color: black;
-        text-decoration: none;
-      }
-      a.task10-92:hover {
-        background-color: green;
-        color: white;
-      }
-      a.task10-93 {
-        border: solid 5px rgb(111, 0, 0);
-        background-color: red;
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-      }
-      a.task10-93:hover {
-        color: rgb(219, 143, 143);
-      }
-
-
-
-      a.btn {
-        background-color: #18255e;
-        padding: 15px 20px;
-        color: azure;
-        border-radius: 25px;
-        text-decoration-line: none;
-        margin: 5px;
-        font-size: 25px;
-        font-weight: 900;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-      div.btns {
-        margin: 30px 10px 25px;
-        display: flex;
-        justify-content: center;
-      }
-    </style>
   </head>
-  <body>
+  <body class="mainTask">
     <h1>Tasks App</h1><hr><hr><br>
     <div class="section1">
       <h1 class="section1">First Heading & The biggest one</h1>
-      <p>
+      <p class="mainTaskPra">
         That it called a paragraph <br />
         <b>Lorem</b> ipsum dolor sit amet, <i>consectetuer</i> adipiscing elit. <mark>Maecenas</mark> porttitor congue massa. <small>Fusce</small> posuere, <del>magna</del> sed pulvinar ultricies, purus
         lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
@@ -291,7 +28,7 @@
       </p>
       <hr />
       <h2 class="section1">Second Heading</h2>
-      <p>
+      <p class="mainTaskPra">
         <strong>Lorem</strong> ipsum dolor sit amet, <em>consectetuer</em> adipiscing elit. <mark>Maecenas</mark> porttitor congue massa. <small>Fusce</small> posuere, <ins>magna</ins> sed pulvinar ultricies, purus
         lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
         morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In
@@ -301,7 +38,7 @@
       </p>
       <hr />
       <h3 class="section1">Theard Heading</h3>
-      <p>
+      <p class="mainTaskPra">
         <abbr title="Pro Evolution Soccer">PES</abbr> the first and original 3D soccer game - makes its return to the Nintendo 3DS handheld system.<br><br>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus
         lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
@@ -316,14 +53,14 @@
       </p>
       <hr />
       <h4 class="section1">Fourth Heading</h4>
-      <p>
+      <p class="mainTaskPra">
         I love football :: <bdo dir="rtl">I love football</bdo><br><br>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus
         lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
         morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In
         porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem
         venenatis eleifend. Ut nonummy.
-        <p>Here is a quote from WWF's website:</p>
+        <p class="mainTaskPra">Here is a quote from WWF's website:</p>
         <blockquote cite="http://www.worldwildlife.org/who/index.html">
         WWF works to help local communities conserve the natural resources they depend upon; transform markets and policies toward sustainability; and protect and restore species and their habitats. Our efforts ensure that the value of nature is reflected in decision-making from a local to a global scale.
 
@@ -334,7 +71,7 @@
       </p>
       <hr />
       <h5 class="section1">Fiveth Heading</h5>
-      <p>
+      <p class="mainTaskPra">
         <img src="../../images/th.jpeg" width="220" height="277" alt="The Last Supper">
         <p><cite>The Last Supper</cite> by Davinci. Painted in 15's.</p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus
@@ -346,7 +83,7 @@
       </p>
       <hr />
       <h6 class="section1">sixth Heading & the smallest</h6>
-      <p>
+      <p class="mainTaskPra">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus
         lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant
         morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In
@@ -361,7 +98,7 @@
     <hr />
     <hr />
     <pre>
-      <p>
+      <p class="mainTaskPra">
         In the realm where he dances,
           a true football magician,
             Ronaldo with swift feet,
@@ -538,37 +275,37 @@
       </tr>
     </table>
     <!-- task10-5 -->
-    <i class="fa-brands fa-html5"></i>
-    <i class="fa-brands fa-css3-alt"></i>
-    <i class="fa-brands fa-css3"></i>
-    <i class="fa-brands fa-less"></i>
-    <i class="fa-brands fa-square-js"></i>
-    <i class="fa-brands fa-js"></i>
-    <i class="fa-brands fa-react"></i>
-    <i class="fa-brands fa-angular"></i>
-    <i class="fa-brands fa-vuejs"></i>
-    <i class="fa-brands fa-npm"></i>
-    <i class="fa-brands fa-node"></i>
-    <i class="fa-brands fa-node-js"></i><br>
+    <i class="fa-brands fa-html5" id="mainTask"></i>
+    <i class="fa-brands fa-css3-alt" id="mainTask"></i>
+    <i class="fa-brands fa-css3" id="mainTask"></i>
+    <i class="fa-brands fa-less" id="mainTask"></i>
+    <i class="fa-brands fa-square-js" id="mainTask"></i>
+    <i class="fa-brands fa-js" id="mainTask"></i>
+    <i class="fa-brands fa-react" id="mainTask"></i>
+    <i class="fa-brands fa-angular" id="mainTask"></i>
+    <i class="fa-brands fa-vuejs" id="mainTask"></i>
+    <i class="fa-brands fa-npm" id="mainTask"></i>
+    <i class="fa-brands fa-node" id="mainTask"></i>
+    <i class="fa-brands fa-node-js" id="mainTask"></i><br>
 
-    <i class="fa-brands fa-java"></i>
-    <i class="fa-brands fa-python"></i>
-    <i class="fa-brands fa-linux"></i>
-    <i class="fa-brands fa-unity"></i>
-    <i class="fa-brands fa-swift"></i>
-    <i class="fa-brands fa-php"></i><br>
+    <i class="fa-brands fa-java" id="mainTask"></i>
+    <i class="fa-brands fa-python" id="mainTask"></i>
+    <i class="fa-brands fa-linux" id="mainTask"></i>
+    <i class="fa-brands fa-unity" id="mainTask"></i>
+    <i class="fa-brands fa-swift" id="mainTask"></i>
+    <i class="fa-brands fa-php" id="mainTask"></i><br>
 
-    <i class="fa-solid fa-code-branch"></i>
-    <i class="fa-solid fa-code-pull-request"></i>
-    <i class="fa-solid fa-code-merge"></i>
-    <i class="fa-solid fa-code-fork"></i>
-    <i class="fa-solid fa-code-commit"></i><br>
+    <i class="fa-solid fa-code-branch" id="mainTask"></i>
+    <i class="fa-solid fa-code-pull-request" id="mainTask"></i>
+    <i class="fa-solid fa-code-merge" id="mainTask"></i>
+    <i class="fa-solid fa-code-fork" id="mainTask"></i>
+    <i class="fa-solid fa-code-commit" id="mainTask"></i><br>
 
-    <i class="fa-regular fa-handshake"></i>
-    <i class="fa-duotone fa-solid fa-users"></i>
-    <i class="fa-solid fa-mosque"></i>
-    <i class="fa-solid fa-church"></i>
-    <i class="fa-regular fa-copyright"></i><br>
+    <i class="fa-regular fa-handshake" id="mainTask"></i>
+    <i class="fa-duotone fa-solid fa-users" id="mainTask"></i>
+    <i class="fa-solid fa-mosque" id="mainTask"></i>
+    <i class="fa-solid fa-church" id="mainTask"></i>
+    <i class="fa-regular fa-copyright" id="mainTask"></i><br>
 
     <ul class="task10-6">
       <li class="task10-60">Coffee</li>
@@ -610,7 +347,7 @@
     <a href="#" class="task10-91">Text Link</a>
     <a href="#" class="task10-92">Link Button</a>
     <a href="#" class="task10-93">Link Button</a>
-    
+
     <div class="btns">
       <a class="btn" href="registration.html">تسجيل دخول</a>
       <a class="btn" href="../../index.html">الصفحة الرئسية<a>
