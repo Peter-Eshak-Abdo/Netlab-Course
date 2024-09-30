@@ -1,0 +1,104 @@
+body {
+  background-color: rgb(222, 220, 220);
+  margin: 5px 10px;
+}
+
+.header {
+  display: block;
+  position: relative;
+  top: 0;
+  background-color: white;
+}
+
+.heading {
+  padding-top: 30px;
+  font-size: 50px;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+}
+
+.pragHea {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.pragSec {
+  font-size: 22px;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 8px 12px;
+  background-color: black;
+  color: white;
+}
+
+.listIteam {
+  display: inline-block;
+}
+
+.listIteam:hover {
+  background-color: rgb(135, 134, 131);
+  color: black;
+}
+
+#spichal {
+  float: right;
+}
+
+.section1, .section2 {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  display: inline;
+  float: left;
+  width: 75%;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.imgSec {
+  max-height: 150px;
+}
+
+.secAbout, .secPopu, .secFollow {
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  display: inline;
+  float: right;
+  width: fit-content;
+}
+
+.imgAbout, .imgPoup {
+  height: 80px;
+  display: block;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+}
+
+.footer {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
