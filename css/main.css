@@ -326,11 +326,11 @@ div.btns {
 }
 
 .liergradian {
-  height: 300px;
+  height: 400px;
   background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, cyan, violet 90%);
   width: 85%;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 80px 30% 50px 100%;
   border-color: antiquewhite;
   border-style: groove;
   box-shadow: 20px 20px 50px 15px grey;
@@ -352,29 +352,35 @@ div.btns {
 .perantFloat {
   background-color: yellow;
 }
-
-.red {
-  background-color: red;
+.red , .green ,.blue {
   width: 100px;
   height: 100px;
+}
+.red {
+  background-color: red;
   float: right;
   z-index: -2;
 }
 
 .green {
   background-color: green;
-  width: 100px;
-  height: 100px;
-  /* z-index: 100; */
 }
 
 .blue {
   background-color: blue;
-  width: 100px;
-  height: 100px;
 }
 
-.floated .red {}
+.boxShadow {
+  direction: ltr;
+  font-size: 35px;
+  font-weight: 800;
+  border: 5px solid white;
+  outline: cyan solid 5px;
+  outline-offset: 20px;
+  box-shadow: 5px 7px 25px 7px blue;
+  box-shadow: 5px 7px 15px wheat;
+
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* taskIndex.html */
