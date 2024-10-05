@@ -352,10 +352,12 @@ div.btns {
 .perantFloat {
   background-color: yellow;
 }
-.red , .green ,.blue {
+
+.red, .green, .blue {
   width: 100px;
   height: 100px;
 }
+
 .red {
   background-color: red;
   float: right;
@@ -379,7 +381,43 @@ div.btns {
   outline-offset: 20px;
   box-shadow: 5px 7px 25px 7px blue;
   box-shadow: 5px 7px 15px wheat;
+}
 
+.transforms p, .transitions p {
+  background-color: violet;
+  padding: 25px 50px;
+  border: 5px solid rgb(116, 116, 116);
+  width: fit-content;
+  margin: 50px auto 300px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.transforms:hover {
+  transition: 1s;
+  /* transform: translate(150px, 150px);
+  transform: rotate(45deg);
+  transform: scale(3, 1.5);
+  transform: skew(15deg, 15deg); */
+  /* transform: matrix(3, 15deg, 15deg, 1.5, 150px, 150px); */
+  transform: matrix(3, 0.5, 0.5, 1.5, 0, 150);
+  /*scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()*/
+  transform-style: preserve-3d;
+}
+
+.transitions {
+  /* transition-duration: 1s;
+   transform-origin: center;
+  transition-property: all;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out; */
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.transitions:hover {
+  width: 500px;
+  height: 300px;
+  transform: rotate(180deg);
 }
 
 /* ---------------------------------------------------------------------------------- */
