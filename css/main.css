@@ -522,6 +522,51 @@ div.btns {
   cursor: pointer;
 }
 
+.perant {
+  background-color: red;
+  padding: 10px;
+  width: 90%;
+  height: 400px;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  gap:15px;
+
+  grid-template-areas:
+  "head head head"
+  "navi main side"
+  "navi main side"
+  "foot foot foot"
+  ;
+}
+.perant div {
+  background-color: yellowgreen;
+  color: black;
+}
+/* .header , .footer{
+  background-color: yellow;
+  grid-column: 1/-1;
+}
+.nav, .main, .sidebar {
+  background-color: yellowgreen;
+  grid-row: 2/4;
+} */
+.header {
+  grid-area: head;
+}
+.nav {
+  grid-area: navi;
+}
+.main {
+  grid-area: main;
+}
+.sidebar {
+  grid-area: side;
+}
+.footer {
+  grid-area: foot;
+}
 /*
 1- element[attr = "value"]
 2-[attr ^="value"] start with
