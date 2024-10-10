@@ -567,6 +567,144 @@ div.btns {
 .footer {
   grid-area: foot;
 }
+
+.responsiveForm {
+  background-color: #7e7e7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  background-color: antiquewhite;
+  padding: 10px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+form input {
+   background-color: #92ffff;
+   color: white;
+   padding: 5px 10px;
+   outline: none;
+   flex-basis: 200px;
+   flex-grow: 1;
+}
+form button {
+  background-color: #8077fe;
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  flex-basis: 30px;
+  flex-grow: 1;
+}
+
+.adidas {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom left , white , black 80%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  direction: ltr;
+}
+.adidas::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  clip-path: circle(40% at right 70%);
+  z-index: 1;
+}
+.adidasContainer {
+  width: 80%;
+  height: 80%;
+  background: rgb(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 2;
+}
+.adidasContainer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+.adidasContainer nav .logo {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+.adidasContainer nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.adidasContainer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.adidasContainer nav ul li a:hover {
+  color: greenyellow;
+}
+.contentAdidas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.contentAdidas .textAdidas {
+  color: white;
+  width: 40%;
+}
+.contentAdidas .textAdidas h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.contentAdidas .textAdidas p {
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.contentAdidas .imageAdidas {
+  width: 40%;
+}
+.contentAdidas .imageAdidas img {
+  width: 400px;
+}
+@media (min-width: 950px) and (max-width: 1150px) {
+  .contentAdidas .imageAdidas img {
+    width: 330px;
+  }
+}
+@media (max-width: 950px) and (min-width: 600px) {
+  .contentAdidas , .adidasContainer nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contentAdidas .imageAdidas, .contentAdidas .textAdidas {
+    width: 80%;
+  }
+  .adidas::after {
+    clip-path: circle(50% at bottom);
+  }
+}
+
 /*
 1- element[attr = "value"]
 2-[attr ^="value"] start with
@@ -575,6 +713,9 @@ div.btns {
 2-[attr ~="value"]contain a word
 2-[attr ="value" i]case sensitive
 */
+@media print {
+
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* taskIndex.html */
