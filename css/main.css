@@ -1,4 +1,4 @@
-/* mainTask.html */
+/* START mainTask.html */
 body.mainTask {
   background-image: url("../images/bg3.jpeg");
   background-repeat: no-repeat;
@@ -307,8 +307,107 @@ div.btns {
   justify-content: center;
 }
 
+.lec17-task12 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 10px solid transparent;
+  border-image: url(../images/border-image-lines.png) 30 round;
+}
+.task12 {
+  width: 100px;
+  height: 80px;
+  margin: 10px;
+  background-color: violet;
+  border:solid orange 3px;
+}
+.shape1 {
+  border-radius: 5px;
+}
+.shape2 {
+  border-radius: 30px;
+}
+.shape3 {
+  border-radius: 50%;
+}
+.shape4 {
+  border-radius: 20px 0px 20px 0px;
+}
+.shape5 {
+  border-radius: 100% 0px 0px 0px;
+}
+.shape6 {
+  border-radius: 20px;
+}
+.shape7 {
+  border-radius: 90% 0px 90% 0px;
+}
+.shape8 {
+  border-radius: 50% 50% 0px 0px;
+}
+
+.task12-1, .task12-2 {
+  color: black;
+  font-size: 28px;
+  margin: 10px;
+}
+.task12-1::first-line, .task12-2::first-line {
+  color: blue;
+  font-size: 32px;
+}
+
+.task12-3 {
+  display: block;
+  font-size: 28px;
+  color: black;
+}
+.task12-3::first-letter {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: red;
+}
+
+.lec17-task12-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 50%;
+  background-color: #c020ff;
+  align-items: center;
+  align-content: center;
+}
+img.task12FishImg1 {
+  width: 100px;
+  height: 50px;
+  transform: scaleX(-1);
+}
+.task12-4 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin: 10px 5px;
+  font-family: sans-serif;
+}
+img.task12FishImg2 {
+  width: 100px;
+  height: 50px;
+}
+
+.lec17-task12-2 {
+  background-image: url(../images/sheep1.png) , url(../images/betweengrassandsky3.png);
+  background-position: left top, left top;
+  background-repeat: no-repeat;
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  height: 200px;
+}
+
+/* END mainTask.html */
 /* ---------------------------------------------------------------------------------- */
-/* DraftApp.html */
+/* START DraftApp.html */
 #divDrop {
   width: 400px;
   height: 500px;
@@ -716,9 +815,9 @@ form button {
 @media print {
 
 }
-
+/* END DraftApp.html */
 /* ---------------------------------------------------------------------------------- */
-/* taskIndex.html */
+/* STATR taskIndex.html */
 .taskImg {
   height: 150px;
   width: 150px;
@@ -728,7 +827,7 @@ form button {
   height: 200px;
   width: 200px;
 }
-
+/* END taskIndex.html */
 /* ---------------------------------------------------------------------------------- */
 /* .bd-placeholder-img {
   font-size: 1.125rem;
