@@ -287,8 +287,6 @@ a.task10-93:hover {
   color: rgb(219, 143, 143);
 }
 
-
-
 a.btn {
   background-color: #18255e;
   padding: 15px 20px;
@@ -345,7 +343,6 @@ div.btns {
 .shape8 {
   border-radius: 50% 50% 0px 0px;
 }
-
 .task12-1, .task12-2 {
   color: black;
   font-size: 28px;
@@ -355,7 +352,6 @@ div.btns {
   color: blue;
   font-size: 32px;
 }
-
 .task12-3 {
   display: block;
   font-size: 28px;
@@ -366,7 +362,6 @@ div.btns {
   text-transform: uppercase;
   color: red;
 }
-
 .lec17-task12-1 {
   display: flex;
   flex-direction: row;
@@ -394,15 +389,14 @@ img.task12FishImg2 {
   width: 100px;
   height: 50px;
 }
-
 .lec17-task12-2 {
   background-image: url(../images/sheep1.png) , url(../images/betweengrassandsky3.png);
-  background-position: left top, left top;
-  background-repeat: no-repeat;
-  padding: 15px;
-  width: 90%;
+  background-position: left bottom, left top;
+  background-repeat: no-repeat, repeat;
+  width: 50%;
   margin: auto;
-  height: 200px;
+  height: 400px;
+  background-size: auto , cover;
 }
 
 /* END mainTask.html */
