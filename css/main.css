@@ -399,6 +399,165 @@ img.task12FishImg2 {
   background-size: auto , cover;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+.task13-1 {
+  color: black;
+  font-size: 32px;
+}
+.task13-1 p {
+  padding: 5px 10px;
+}
+.task13-01 {
+  font-family: "Roboto", sans-serif;
+}
+.task13-02 {
+  font-family: "Zen Loop", cursive;
+}
+.task13-03 {
+  font-family: "Montserrat", sans-serif;
+}
+.task13-04 {
+  font-family: "Roboto", sans-serif;
+}
+.task13-05 {
+  font-family: "Festive", cursive;
+}
+.task13-06 {
+  font-family: "Roboto", sans-serif;
+}
+.task13-07 {
+  font-family: "Zen Tokyo Zoo", system-ui;
+}
+.task13-08 {
+  font-family: "Roboto", sans-serif;
+}
+.task13-09 {
+  font-family: "Roboto", sans-serif;
+}
+.task13-10 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+}
+.task13-11 {
+  font-family: "Roboto", sans-serif;
+}
+.task13-12 {
+  font-family: "Roboto", sans-serif;
+}
+.task13-2 {
+  width: 50%;
+  height: 100px;
+  background-image: linear-gradient(to bottom left, rgb(241, 109, 131), orange);
+}
+.task13-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.task13-3 .task13-01 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  box-shadow: red 0px -10px 15px;
+}
+.task13-3 .task13-02 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  box-shadow: red 10px 0px 15px;
+}
+.task13-3 .task13-03 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  box-shadow: red 0px 10px 15px;
+}
+.task13-3 .task13-04 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  box-shadow: red -10px 0px 15px;
+}
+
+.task13-5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.task13-5 .task13-01 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: rotateX(45deg);
+}
+.task13-5 .task13-02 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: rotateY(45deg);
+}
+.task13-5 .task13-03 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: rotateZ(45deg);
+}
+.task13-5 .task13-04 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: translateX(30px);
+}
+.task13-5 .task13-05 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: translateY(30px);
+}
+.task13-5 .task13-06 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: translateZ(50px);
+}
+.task13-5 .task13-07 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: scaleX(1.5);
+}
+.task13-5 .task13-08 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: scaleY(1.5);
+}
+.task13-5 .task13-09 {
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+  transform: scaleZ(1.5);
+}
+.task13-6 {
+  width: 150px;
+  height: 150px;
+  background-image: conic-gradient(red, yellow, green , red);
+  border-radius: 50%;
+  margin: auto;
+}
+.task13-7 {
+  width: 250px;
+  height: 150px;
+  background-image: conic-gradient(red, yellow, green , blue);
+  border-radius: 5px;
+  margin: auto;
+}
+
 /* END mainTask.html */
 /* ---------------------------------------------------------------------------------- */
 /* START DraftApp.html */
