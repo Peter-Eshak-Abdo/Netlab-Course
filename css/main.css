@@ -1036,7 +1036,154 @@ form button {
   color: white;
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Spicy+Rice&display=swap');
+.dashboard {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+}
+.dashNav {
+  width: 60px;
+  padding: 10px;
+  background-color: #000e2c;
+  /* float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-overflow: clip; */
+  overflow: hidden;
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: .5s;
+}
+.dashNav:hover {
+  width: 260px;
+  overflow: visible;
+}
+.dashNav .header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dashNav ul {
+  list-style-type: none;
+  padding: 5px 2px;
+  margin: 5px 2px;
+  position: relative;
+  height: 95%;
+}
+.dashNav ul li a {
+  display: block;
+  text-decoration: none;
+  margin: 10px;
+  padding: 15px 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: .5s;
+}
+.dashNav ul li a:hover , .active , .content .items .item:hover, .content table td:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+}
+.log-out {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+}
+.dashNav ul li a i {
+  font-size: 50px;
+}
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: white 3px solid;
+  flex-shrink: 0;
+}
+.image img {
+  width: 100%;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.profile p {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.content {
+  width: 100%;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 10px;
+}
+.content .heading {
+  font-size: 28px;
+  font-weight: 800;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #135dff;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.content .items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.content .items .item {
+  background-color: #123;
+  height: 150px;
+  flex-basis: 150px;
+  flex-grow: 1;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
+}
+.content .items .item .data {
+  text-align: center;
+}
+.content .items .item .data span {
+  font-size: 30px;
+}
+.content table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+}
+.content table td, .content table th {
+  background-color: #123;
+  height: 40px;
+  border-radius: 10px;
+}
+.content table th {
+  background-color: #135dff;
+}
+.price , .count {
+  padding: 6px;
+  border-radius: 6px;;
+}
+.price {
+  background-color: green;
+}
+.count {
+  background-color: rgb(152, 132, 22);
+}
 
 
 /*
