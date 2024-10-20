@@ -558,6 +558,39 @@ img.task12FishImg2 {
   margin: auto;
 }
 
+.task14 {
+  background-color: #131d4b;
+  height: 250px;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.task14-0 {
+  width: 150px;
+  height: 50px;
+  padding: 20px 10px;
+  margin: auto;
+  background-color: blue;
+  border-radius: 25px;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 1.5s ease-in-out;
+}
+.task14-0:hover {
+  transform: translate(-20px, -35px);
+  box-shadow: 10px 10px 8px cyan , -10px -10px 8px lightcyan;
+  font-size: 32px;
+  font-weight: 900;
+  border-radius: 50%;
+  background-image: radial-gradient(circle, red, yellow, green);
+}
+.task14-0:active {
+
+}
+
 /* END mainTask.html */
 /* ---------------------------------------------------------------------------------- */
 /* START DraftApp.html */
@@ -1186,6 +1219,16 @@ form button {
 }
 
 
+
+
+
+
+
+
+
+.brack {
+  margin: 25px 0;
+}
 /*
 1- element[attr = "value"]
 2-[attr ^="value"] start with
@@ -1204,7 +1247,6 @@ form button {
   height: 150px;
   width: 150px;
 }
-
 .taskVid {
   height: 200px;
   width: 200px;
