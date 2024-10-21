@@ -591,6 +591,101 @@ img.task12FishImg2 {
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Aref+Ruqaa&display=swap');
+.task15 {
+  width: 100%;
+  background-image:
+      linear-gradient(to right, #01022de5 30%, #00000088),  url(../images/house.jpg);
+  font-family: "Amiri", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.task15 .nav {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 20px 50px;
+  font-size: 30px;
+}
+.task15 .nav p {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  background-color: rgb(127, 255, 212, .4);
+  border-radius: 30px;
+  border: solid rgb(127, 255, 212, .8) 1px;
+  padding: 15px 20px;
+}
+.task15 .nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: nowrap row;
+  position: relative;
+  top: 0px;
+  margin: 25px 20px;
+  padding: 0 10px;
+}
+.task15 .nav ul li {
+  margin: 0 20px;
+  border: solid cyan 1px;
+  background-color: #135dff70;
+  border-radius: 30px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.task15 .nav ul li:hover {
+  background-color: #01022d30;
+  font-size: 32px;
+  transition-duration: .5s;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transform: translateY(-10px);
+}
+.task15 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.task15 .content .title {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  margin-bottom: 15px;
+}
+.task15 .content .sub {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  margin-bottom: 15px;
+}
+.task15 .content .buttons {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  padding: 10px 15px;
+}
+.task15 .content .buttons a {
+  text-decoration: none;
+  border-radius: 30px;
+    border: solid cyan 1px;
+    padding: 15px;
+}
+.task15 .content .buttons a:hover {
+  background-color: #0454ff50;
+  font-size: 35px;
+}
+
 /* END mainTask.html */
 /* ---------------------------------------------------------------------------------- */
 /* START DraftApp.html */
