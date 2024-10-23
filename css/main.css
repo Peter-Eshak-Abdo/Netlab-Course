@@ -595,13 +595,15 @@ img.task12FishImg2 {
 .task15 {
   width: 100%;
   background-image:
-      linear-gradient(to right, #01022de5 30%, #00000088),  url(../images/house.jpg);
+      linear-gradient(to right, #00000080 30%, #000000),  url(../images/house.jpg);
   font-family: "Amiri", serif;
   font-weight: 400;
   font-style: normal;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+/*  box-sizing: border-box;*/
 }
 .task15 .nav {
   display: flex;
