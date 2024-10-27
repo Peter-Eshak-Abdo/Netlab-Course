@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;500;700;900&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+body {
+  background-color: lightcyan;
+}
+
+.nav {
+  display:flex;
+  flex-direction: column;
+  width: 20%;
+}
+.nav .title {
+  font-size: 38px;
+  color: cyan;
+  text-align: center;
+  margin-top: 25px;
+  font-weight: 700;
+}
+.sub {
+  font-size: 24px;
+  color:black;
+  margin: 10px 15px 22px;
+}
+.nav .menu {
+  display:flex;
+  flex-direction: column;
+  margin: 25px auto;
+}
+.nav .menu .title {
+  font-size: 28px;
+}
+.nav .menu ul{
+  font-size: 32px;
+  list-style-type: none;
+}
+.nav .sign {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+.nav .sign a {
+  text-decoration: none;
+  padding: 20 25px;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+}
+.header {
+  position: relative;
+  top:0;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .search {
+  width: 250px;
+  justify-content: space-between;
+}
+.header .search p {
+  color:gray;
+}
+.header .search i {
+  font-size: 26px;
+  color: gray;
+}
+.header ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  width: 80%;
+}
+.content .Vscroll {
+  display: flex;
+  flex-flow: nowrap row;
+  overflow: scroll;
+}
+.content .Vscroll .cont {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 20px;
+  margin: 8px 12px;
+  padding: 10px 15px;
+}
+.title {
+  font-size: 32px;
+  margin: 15px;
+}
+.content .products {
+  background-color: white;
+  border-radius: 20px;
+
+  display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 10px;
+    padding: 10px;
+}
+.products .title {
+  font-size: 34px;
+  font-weight: 900;
+}
+.products .data {
+  display: flex;
+  flex-direction: row;
+}
+.products .data .price {
+  font-size: 32px;
+  font-weight: 900;
+}
+.products .data a {
+  text-decoration: none;
+  background-color: blue;
+  color:white;
+  padding: 8px 12px;
+  font-size: 26px;
+}
+.products #item1 {
+  grid-area: 1 / 1 / span 1 / span 3;
+}
+
+.products #item2 {
+  grid-area: 1 / 4 / span 1 / span 3;
+}
+
+.products #item3 {
+  grid-area: 2 / 1 / span 1 / span 3;
+}
+
+.products #item4 {
+  grid-area: 2 / 4 / span 1 / span 3;
+}
+
+.products #item5 {
+  grid-area: 3 / 1 / span 1 / span 3;
+}
+
+.products #item6 {
+  grid-area: 3 / 4 / span 1 / span 3;
+}
+
+.products #item7 {
+  grid-area: 4 / 1 / span 1 / span 3;
+}
+
+.products #item8 {
+  grid-area: 4 / 4 / span 1 / span 3;
+}

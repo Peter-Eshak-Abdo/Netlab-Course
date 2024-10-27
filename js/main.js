@@ -4,8 +4,9 @@ function myFunction() {
 }
 
 /* Start Draft index.html */
-/* const pos = document.getElementById("ip");
-function getGeolocation() {
+/*const pos = document.getElementById("IPaddress");
+
+onload = function getGeolocation() {
   if (navigator.geolocation) {
      navigator.geolocation.getCurrentPosition(showPosition, showError);
   } else {
