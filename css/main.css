@@ -1315,6 +1315,45 @@ form button {
   background-color: rgb(152, 132, 22);
 }
 
+.typing {
+  width: 50%;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+}
+.typing p::after {
+  content: " |";
+  animation-name: typing;
+  animation-duration: 5s;
+}
+@keyframes typing {
+  0% {content: " |"}
+  4% {content: " P/"}
+  8% {content: " Pe/"}
+  12% {content: " Pet/"}
+  16% {content: " Pete/"}
+  20% {content: " Peter|"}
+  24% {content: " Peter"}
+  28% {content: " Peter|"}
+  32% {content: " Pete|"}
+  36% {content: " Pet|"}
+  40% {content: " Pe|"}
+  44% {content: " P|"}
+  48% {content: " |"}
+  52% {content: " T|"}
+  56% {content: " To|"}
+  60% {content: " Tof|"}
+  64% {content: " Tofa|"}
+  68% {content: " Tofa7|"}
+  72% {content: " Tofa7a"}
+  76% {content: " Tofa7a|"}
+  80% {content: " Tofa7|"}
+  84% {content: " Tofa|"}
+  88% {content: " Tof|"}
+  92% {content: " To|"}
+  96% {content: " T|"}
+  100% {content: " |"}
+}
 
 
 
