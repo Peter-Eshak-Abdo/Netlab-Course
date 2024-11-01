@@ -703,7 +703,7 @@ img.task12FishImg2 {
 #divDrop {
   width: 400px;
   height: 500px;
-  border: 10px solid var(--secondary-color);
+  border: 10px solid var(--secondary-color, var(--main-color));
 }
 
 #divDropImg {
