@@ -1369,6 +1369,10 @@ form button {
   100% {content: " |"}
 }
 
+.employee {
+  width:  calc(100% / 4 - 20px);
+}
+
 
 
 
@@ -1380,11 +1384,16 @@ form button {
 /*
 1- element[attr = "value"]
 2-[attr ^="value"] start with
-2-[attr $="value"]end with
-2-[attr *="value"]contain a value
-2-[attr ~="value"]contain a word
-2-[attr ="value" i]case sensitive
+3-[attr $="value"]end with
+4-[attr *="value"]contain a value
+5-[attr ~="value"]contain a word
+6-[attr ="value" i]case sensitive
+
+>  => direct children
++  => direct sibling (after)
+~  => all siblings (after)
 */
+
 @media print {
 
 }
