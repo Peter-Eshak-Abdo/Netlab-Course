@@ -40,7 +40,7 @@
     </script>
   </head>
 
-  <body>
+  <body onload="checkCookie()">
     <div class="navbar navbar-expand-lg sticky-top rounded-5 pe-3 bg-primary-subtle shadow-lg opacity-75">
       <a class="navbar-brand" href="#" title="Logo"> <i class="logo fa-solid fa-apple-alt fa-xl"></i></a>
       <button
@@ -449,9 +449,9 @@
         <button type="button" class="btn-primary">Agree</button>
       </div>
     </section>
-    <br>
-      <div class="brack"></div>
-      <br>
+    <br />
+    <div class="brack"></div>
+    <br />
     <div class="bom">
       <p id="screenWidth">Screen width is</p>
       <p id="screenHeight">Screen Height is</p>
@@ -475,9 +475,12 @@
       <br />
       <button onclick="ConfirmBox()">Confirm Box Modek</button>
       <p id="confirm"></p>
-      <br>
+      <br />
       <button onclick="myPrompt()">Try it</button>
       <p id="prompt"></p>
+      <br>
+      <div id="loadDoc">
+      <button type="button" onclick="loadDoc()">Change Content</button>
     </div>
 
     <div class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 border-top rounded-5 bg-primary-subtle">
@@ -569,15 +572,43 @@
         document.getElementById("confirm").innerHTML = txt;
       }
       function myPrompt() {
-  let text;
-  let person = prompt("Please enter your name:", "Tofa7a");
-  if (person == null || person == "") {
-    text = "User cancelled the prompt.";
-  } else {
-    text = "Hello " + person + "! How are you today?";
-  }
-  document.getElementById("prompt").innerHTML = text;
-}
+        let text;
+        let person = prompt("Please enter your name:", "Tofa7a");
+        if (person == null || person == "") text = "User cancelled the prompt.";
+        else text = "Hello " + person + "! How are you today?";
+        document.getElementById("prompt").innerHTML = text;
+      }
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        let expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(";");
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == " ") c = c.substring(1);
+          if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        }
+        return "";
+      }
+      function checkCookie() {
+        let user = getCookie("username");
+        if (user != "") alert("Welcome again " + user);
+        else {
+          user = prompt("Please enter your name:", "");
+          if (user != "" && user != null) setCookie("username", user, 30);
+        }
+      }
+      function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = () => document.getElementById("loadDoc").innerHTML =this.responseText;
+        xhttp.open("GET", "../../data.txt");
+        xhttp.send();
+      }
     </script>
   </body>
 </html>
